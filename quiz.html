@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Page</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <!-- Custom CSS (if needed) -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body class="bg-light">
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Welcome to the Quiz!</h1>
+    <form action="/submit" method="post" class="bg-white p-4 shadow rounded">
+      <!-- Question 1 -->
+      <div class="mb-3">
+        <label class="form-label">1. What is the capital of France?</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q1" id="q1a" value="Paris">
+          <label class="form-check-label" for="q1a">Paris</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q1" id="q1b" value="London">
+          <label class="form-check-label" for="q1b">London</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q1" id="q1c" value="Rome">
+          <label class="form-check-label" for="q1c">Rome</label>
+        </div>
+      </div>
+      
+      <!-- Question 2 -->
+      <div class="mb-3">
+        <label class="form-label">2. What is 5 + 3?</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q2" id="q2a" value="6">
+          <label class="form-check-label" for="q2a">6</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q2" id="q2b" value="8">
+          <label class="form-check-label" for="q2b">8</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q2" id="q2c" value="10">
+          <label class="form-check-label" for="q2c">10</label>
+        </div>
+      </div>
+      
+      <!-- Question 3 -->
+      <div class="mb-3">
+        <label class="form-label">3. Which planet is known as the Red Planet?</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q3" id="q3a" value="Earth">
+          <label class="form-check-label" for="q3a">Earth</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q3" id="q3b" value="Mars">
+          <label class="form-check-label" for="q3b">Mars</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q3" id="q3c" value="Jupiter">
+          <label class="form-check-label" for="q3c">Jupiter</label>
+        </div>
+      </div>
+      
+      <!-- Question 4 -->
+      <div class="mb-3">
+        <label class="form-label">4. What is the largest mammal in the world?</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q4" id="q4a" value="Elephant">
+          <label class="form-check-label" for="q4a">Elephant</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q4" id="q4b" value="Blue Whale">
+          <label class="form-check-label" for="q4b">Blue Whale</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q4" id="q4c" value="Giraffe">
+          <label class="form-check-label" for="q4c">Giraffe</label>
+        </div>
+      </div>
+      
+      <!-- Question 5 -->
+      <div class="mb-3">
+        <label class="form-label">5. Which element has the chemical symbol "O"?</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q5" id="q5a" value="Oxygen">
+          <label class="form-check-label" for="q5a">Oxygen</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q5" id="q5b" value="Gold">
+          <label class="form-check-label" for="q5b">Gold</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="q5" id="q5c" value="Hydrogen">
+          <label class="form-check-label" for="q5c">Hydrogen</label>
+        </div>
+      </div>
+      
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+  </div>
+  
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
